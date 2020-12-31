@@ -11,14 +11,16 @@ def join_nested_strings(src)
     while element_index < src[row_index].count do 
       if src[row_index][element_index] == string_variable.class
          hold_string = src[row_index][element_index]
-         new_array << hold_string
+         
       end   
        element_index += 1 
     end
     row_index += 1 
     
   end 
+  new_array << hold_string
   new_array.join
+  
   new_array
   
 end
